@@ -425,7 +425,9 @@ minetest.register_alias("farming:pumpkin_cake_mix", "farming:pumpkin_flour")
 minetest.register_craft({
 	output = "farming:pumpkin_flour",
 	type = "shapeless",
-	recipe = {"farming:flour", "farming:pumpkin"}
+	recipe = {"farming:flour", "farming:pumpkin"},
+        replacements = {{"farming:pumpkin", "farming:pumpkin_seed"},
+                        {"farming:flour", "farming:pumpkin_seed"}}
 })
 
 minetest.register_craft({
